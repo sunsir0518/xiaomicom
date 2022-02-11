@@ -1,0 +1,254 @@
+@charset "utf-8";
+@import url("../styles/index.less");
+
+.main {
+  .sticky-nav {
+    height: 60px;
+    line-height: 60px;
+    border: 1px solid #e0e0e0;
+    box-shadow: 0px 0px 0px 1px #d8d7d7;
+
+    h2 {
+      float: left;
+    }
+
+    ul {
+      float: right;
+
+      li {
+        float: left;
+
+        a {
+          color: #616161;
+          font-size: 14px;
+          margin: 0 15px;
+          &:hover {
+            color: #ff6700;
+          }
+        }
+
+        span {
+          color: #616161;
+          font-size: 14px;
+        }
+      }
+    }
+  }
+
+  .show-main {
+    .img {
+      float: left;
+      width: 536px;
+      height: 536px;
+      overflow: hidden;
+      background: white;
+      position: relative;
+
+      img {
+        width: 100%;
+      }
+    }
+
+    .content {
+      float: left;
+      padding-top: 32px;
+      margin-left: 70px;
+
+      .top {
+        width: 600px;
+        border-bottom: 1px solid #e0e0e0;
+
+        h3 {
+          font-size: 24px;
+          color: #212121;
+        }
+
+        span {
+          color: #ff4a00;
+          display: inline;
+          font-size: 14px;
+          padding-top: 8px;
+        }
+
+        p {
+          display: inline;
+          font-size: 14px;
+          color: #b0b0b0;
+          padding-top: 8px;
+        }
+
+        i {
+          display: block;
+          font-size: 14px;
+          color: #ff6700;
+          margin-top: 14px;
+        }
+
+        b {
+          display: block;
+          padding: 12px 0 10px;
+          font-size: 18px;
+          color: #ff6700;
+        }
+      }
+
+      .address {
+        padding: 30px 50px;
+        border-top: 1px solid #e0e0e0;
+        background: #fafafa;
+        position: relative;
+        margin-top: 15px;
+
+        span {
+          margin: 0 10px;
+          font-size: 14px;
+        }
+
+        & span:nth-child(5) {
+          color: #ff6700;
+        }
+
+        p {
+          margin-top: 5px;
+          color: #ff6700;
+          text-indent: 10px;
+        }
+
+        i {
+          position: absolute;
+          left: 40px;
+          top: 35px;
+        }
+      }
+
+      .change {
+        width: 600px;
+
+        p {
+          color: #333;
+          font-size: 18px;
+          margin-top: 10px;
+          width: 600px;
+          float: left;
+        }
+
+        div > div {
+          width: 290px;
+          height: 40px;
+          border: 1px solid #333;
+          color: #333;
+          line-height: 40px;
+          text-align: center;
+          margin-top: 5px;
+          float: left;
+          margin: 10px 5px;
+          box-sizing: border-box;
+          cursor: pointer;
+        }
+        .active {
+          border: 1px solid #ff5c00;
+          color: #ff5c00;
+        }
+      }
+
+      .price {
+        box-sizing: border-box;
+        padding: 30px 10px;
+        margin-top: 15px;
+        background-color: #fafafa;
+        margin-bottom: 15px;
+
+        .p-top {
+          width: 600px;
+
+          p {
+            float: left;
+            width: 400px;
+            margin-left: 30px;
+          }
+
+          span {
+            width: 150px;
+            float: right;
+          }
+        }
+
+        > span {
+          display: block;
+          margin-top: 20px;
+          color: #ff5c00;
+          font-size: 24px;
+          text-indent: 30px;
+        }
+      }
+
+      .shop-btn {
+        line-height: 54px;
+        text-align: center;
+
+        .click {
+          float: left;
+          width: 300px;
+          height: 54px;
+          background-color: #ff6700;
+
+          margin-right: 50px;
+          cursor: pointer;
+          a {
+            text-decoration: none;
+            color: white;
+          }
+        }
+
+        .like {
+          background-color: #757575;
+          float: left;
+          width: 142px;
+          height: 54px;
+          opacity: 0.6;
+          cursor: pointer;
+
+          &:hover {
+            opacity: 1;
+          }
+
+          img {
+            float: left;
+            margin-top: 13px;
+            margin-left: 35px;
+            margin-right: 5px;
+          }
+
+          span {
+            float: left;
+            color: white;
+          }
+        }
+      }
+
+      .info {
+        margin-top: 35px;
+
+        img {
+          width: 450px;
+        }
+      }
+    }
+  }
+
+  .rule {
+    margin-top: 25px;
+    background-color: #eeeeee;
+    padding-bottom: 50px;
+
+    h2 {
+      padding: 22px 0;
+      color: #333;
+      font-size: 22px;
+    }
+
+    img {
+      width: 1226px;
+    }
+  }
+}

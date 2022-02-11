@@ -1,0 +1,414 @@
+@charset 'utf-8';
+/* CSS Document */
+* {
+  margin: 0;
+  padding: 0;
+}
+em,
+i {
+  font-style: normal;
+}
+li {
+  list-style: none;
+}
+dl {
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+}
+img {
+  border: 0;
+  /* 图片间隙 */
+  vertical-align: middle;
+}
+button {
+  cursor: pointer;
+}
+a {
+  color: #666;
+  text-decoration: none;
+  cursor: pointer;
+}
+a:hover {
+  color: #e33333;
+}
+button,
+input {
+  font-family: Microsoft YaHei, Heiti SC, tahoma, arial, Hiragino Sans GB, \\5b8b\4f53, sans-serif;
+}
+body {
+  -webkit-font-smoothing: antialiased;
+  background-color: #fff;
+  font: 14px/1.5 Helvetica Neue, Helvetica, Arial, Microsoft Yahei, Hiragino Sans GB, Heiti SC, WenQuanYi Micro Hei, sans-serif;
+}
+.hide,
+.none {
+  display: none;
+}
+.clearfix:after {
+  content: ".";
+  visibility: hidden;
+  clear: both;
+  display: block;
+  height: 0;
+}
+.clearfix {
+  zoom: 1;
+}
+.container {
+  width: 1226px;
+  margin-right: auto;
+  margin-left: auto;
+}
+.container:after {
+  clear: both;
+  content: " ";
+  display: table;
+}
+.container:before {
+  content: " ";
+  display: table;
+}
+html,
+body {
+  height: 100%;
+  background-color: #f9f9f9;
+}
+.banner {
+  width: 20.59%;
+  height: 100%;
+  float: left;
+}
+.banner img {
+  height: 100%;
+  width: 100%;
+}
+.main {
+  width: 76%;
+  float: left;
+  overflow: hidden;
+  height: 100%;
+}
+.main .top {
+  padding: 20px;
+}
+.main .top .t-logo {
+  float: left;
+}
+.main .top .t-logo img {
+  float: left;
+  width: 40px;
+  height: 40px;
+  margin-right: 15px;
+}
+.main .top .t-logo span {
+  float: left;
+  font-size: 25px;
+  line-height: 40px;
+}
+.main .top .nav {
+  float: right;
+  color: #838383;
+  font-size: 14px;
+  line-height: 40px;
+}
+.main .top .nav ul {
+  float: left;
+  position: relative;
+}
+.main .top .nav ul::before {
+  content: "";
+  display: block;
+  width: 1px;
+  background-color: #838383;
+  height: 14px;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  margin-top: -7px;
+}
+.main .top .nav ul li {
+  float: left;
+}
+.main .top .nav ul li a {
+  width: 56px;
+  height: 40px;
+  margin: 0 10px;
+  color: #838383;
+}
+.main .top .nav ul li a:hover {
+  color: #ff5c00;
+}
+.main .top .nav .lang {
+  float: left;
+  padding: 0 20px;
+  position: relative;
+}
+.main .top .nav .lang:hover {
+  color: #ff5c00;
+}
+.main .top .nav .lang::before {
+  content: "";
+  position: absolute;
+  width: 0px;
+  height: 0px;
+  border: 8px solid transparent;
+  border-top: 10px solid #838383;
+  right: 3px;
+  top: 17px;
+  transition: all 0.5s ease;
+  transform-origin: 8px 4px;
+}
+.main .top .nav .lang:hover::before {
+  transform: rotate(180deg);
+  border-top: 10px solid #ff5c00;
+}
+.main .top .nav .lang:hover .sub {
+  box-shadow: 0 0 1px 1px #bbb9b9;
+  height: 80px;
+}
+.main .top .nav .lang .sub {
+  position: absolute;
+  width: 120px;
+  transition: all 0.5s ease;
+  background: white;
+  top: 40px;
+  left: 50%;
+  margin-left: -60px;
+  text-align: center;
+  overflow: hidden;
+  height: 0;
+}
+.main .top .nav .lang .sub span {
+  color: #838383;
+}
+.main .loginoregister {
+  width: 360px;
+  height: 520px;
+  padding: 40px 45px;
+  margin: 0 auto 57px;
+  background-color: white;
+  border-radius: 3px;
+  position: relative;
+  overflow: hidden;
+}
+.main .loginoregister .f-box .login {
+  position: absolute;
+  height: 100px;
+  width: 360px;
+}
+.main .loginoregister .f-box .register {
+  position: absolute;
+  height: 100px;
+  width: 360px;
+  left: 460px;
+}
+.main .loginoregister .btn {
+  position: absolute;
+  top: 0;
+  right: 0;
+  opacity: 0.5;
+  transition: all 0.3s ease;
+}
+.main .loginoregister .btn:hover::before {
+  display: block;
+}
+.main .loginoregister .btn:hover::after {
+  display: block;
+}
+.main .loginoregister .btn::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 0;
+  border: 8px solid transparent;
+  border-left: 8px solid #ff5c00;
+  position: absolute;
+  top: 15px;
+  left: -10px;
+  display: none;
+}
+.main .loginoregister .btn::before {
+  content: "扫码登录";
+  display: block;
+  font-size: 15px;
+  color: white;
+  background-color: #ff5c00;
+  width: 80px;
+  height: 35px;
+  opacity: 1;
+  position: absolute;
+  top: 7px;
+  left: -90px;
+  line-height: 35px;
+  text-align: center;
+  display: none;
+}
+.main .loginoregister .btn:hover {
+  opacity: 1;
+}
+.main .loginoregister .lorr {
+  font-size: 22px;
+  position: relative;
+}
+.main .loginoregister .lorr i {
+  content: "";
+  display: block;
+  width: 44px;
+  height: 4px;
+  background: #ff5c00;
+  position: absolute;
+}
+.main .loginoregister .lorr span {
+  opacity: 0.5;
+  cursor: pointer;
+}
+.main .loginoregister .lorr .active {
+  opacity: 1;
+}
+.main .loginoregister .lorr span:nth-child(1) {
+  margin-right: 20px;
+}
+.main .loginoregister #res-o-l {
+  margin: 0;
+}
+.main .loginoregister .template #agreement {
+  width: 20px;
+  height: 20px;
+}
+.main .loginoregister .template .agreement {
+  position: relative;
+}
+.main .loginoregister .template .agreement input {
+  margin-top: 20px;
+}
+.main .loginoregister .template .agreement label {
+  color: #838383;
+  font-size: 14px;
+  padding: 0 4px;
+  left: 20px;
+  top: 20px;
+}
+.main .loginoregister .template .agreement label span {
+  color: black;
+}
+.main .loginoregister .template .respassword i {
+  font-size: 12px;
+  color: #ff5c00;
+  display: block;
+  height: 10px;
+}
+.main .loginoregister .template .yanzheng {
+  position: relative;
+}
+.main .loginoregister .template .yanzheng i {
+  font-size: 12px;
+  color: #ff5c00;
+  display: block;
+  height: 10px;
+}
+.main .loginoregister .template .yanzheng .getver {
+  cursor: pointer;
+  font-size: 14px;
+  position: absolute;
+  color: #ff5c00;
+  right: 15px;
+  top: 50%;
+  margin-top: -15px;
+}
+.main .loginoregister .template .yanzheng .getver button {
+  background-color: #f9f9f9;
+  font-size: 14px;
+  color: #ff5c00;
+  outline: none;
+  border: none;
+}
+.main .loginoregister .template input {
+  background-color: #f9f9f9;
+  width: 360px;
+  height: 60px;
+  padding: 30px 20px 10px;
+  margin: 10px 0 10px;
+  box-sizing: border-box;
+}
+.main .loginoregister .template label {
+  color: #00000066;
+  font-size: 14px;
+  position: absolute;
+  left: 20px;
+  top: 40px;
+  transition: all 0.5s ease;
+  user-select: none;
+}
+.main .loginoregister .template .respassword,
+.main .loginoregister .template .userphone,
+.main .loginoregister .template .area,
+.main .loginoregister .template .users-box,
+.main .loginoregister .template .pass-box,
+.main .loginoregister .template .yanzheng {
+  position: relative;
+}
+.main .loginoregister .template .pass-box img {
+  position: absolute;
+  right: 35px;
+  top: 35px;
+}
+.main .loginoregister .template .register-btn,
+.main .loginoregister .template .login-btn {
+  cursor: pointer;
+  width: 360px;
+  height: 60px;
+  background-color: #ff5c00;
+  opacity: 0.6;
+  text-align: center;
+  margin: 20px 0 10px;
+  color: white;
+  font-size: 20px;
+  font-weight: 900;
+  line-height: 60px;
+  border-radius: 5px;
+  position: relative;
+}
+.main .loginoregister .template .register-btn:hover,
+.main .loginoregister .template .login-btn:hover {
+  opacity: 1;
+}
+.main .loginoregister .template .forget {
+  font-size: 17px;
+  color: #ff5c00;
+}
+.main .loginoregister .template .forget .forget-p {
+  float: left;
+}
+.main .loginoregister .template .forget .phone-l {
+  float: right;
+}
+.main .loginoregister .template .other-l {
+  text-align: center;
+  color: #aaaaaa;
+  margin-top: 60px;
+}
+.main .loginoregister .template .other-l ul {
+  margin-top: 15px;
+}
+.main .loginoregister .template .other-l ul li {
+  width: 46px;
+  height: 46px;
+  float: left;
+  padding: 0 auto;
+  margin: 0 22px;
+}
+.main .loginoregister .template .other-l ul li a img {
+  width: 50px;
+  height: 50px;
+}
+.footer {
+  text-align: center;
+}
+.footer span {
+  display: block;
+  font-size: 12px;
+  color: #999;
+}
